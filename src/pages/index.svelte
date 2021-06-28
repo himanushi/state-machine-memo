@@ -3,6 +3,7 @@ import { goto } from "@roxi/routify";
 import Button from "~/components/button.svelte";
 import IconButton from "~/components/icon-button.svelte";
 import Github from "~/icons/github.svelte";
+import Xstate from "~/icons/xstate.svelte";
 </script>
 
 <main>
@@ -19,13 +20,18 @@ import Github from "~/icons/github.svelte";
           <Github class="w-10 h-10" />
         </IconButton>
       </a>
+      <a href="https://xstate.js.org/" target="_blank">
+        <IconButton class="w-10 h-10">
+          <Xstate class="w-8 h-8" />
+        </IconButton>
+      </a>
     </ul>
   </li>
 </main>
 
 <style lang="scss">
 main {
-  @apply h-full flex flex-col items-center justify-center;
+  @apply flex flex-col items-center py-10;
 
   span {
     @apply text-4xl mb-6;
@@ -35,7 +41,7 @@ main {
     @apply flex flex-col space-y-3;
 
     ul {
-      @apply self-center;
+      @apply self-center flex flex-row space-x-2;
     }
   }
 }
