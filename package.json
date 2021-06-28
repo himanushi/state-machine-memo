@@ -11,7 +11,9 @@
     "route": "routify -b"
   },
   "dependencies": {
+    "@xstate/inspect": "^0.4.1",
     "axios": "^0.21.1",
+    "highlight.js": "^11.0.1",
     "svelte": "^3.38.3",
     "tailwindcss": "^2.2.2",
     "xstate": "^4.20.1"

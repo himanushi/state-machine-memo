@@ -23,7 +23,9 @@ module.exports = {
   },
   packageOptions: { knownEntrypoints: [
     "@roxi/routify",
-    "@roxi/routify/runtime/buildRoutes"
+    "@roxi/routify/runtime/buildRoutes",
+    "svelte-highlight/src/Highlight.svelte",
+    "highlight.js/lib/languages/typescript"
   ] },
   plugins: [
     "@snowpack/plugin-svelte",
