@@ -10,6 +10,9 @@ import Xstate from "~/icons/xstate.svelte";
   <span> State Machine MEMO </span>
   <li>
     <ul>
+      <Button on:click={() => $goto("/memo/counter")}>Counter</Button>
+    </ul>
+    <ul>
       <Button on:click={() => $goto("/memo/traffic-light")}>
         Traffic Light
       </Button>

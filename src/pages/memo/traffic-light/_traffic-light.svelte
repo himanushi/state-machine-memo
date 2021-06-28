@@ -35,7 +35,7 @@ onDestroy(() => {
 <style lang="scss">
 .traffic-light {
   @apply w-72 p-3 bg-gray-500 rounded-full;
-  @apply flex flex-row items-center justify-center;
+  @apply flex flex-row items-center justify-center space-x-2;
 
   div {
     @apply rounded-full h-20 w-20;
