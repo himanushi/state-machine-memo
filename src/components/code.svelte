@@ -1,19 +1,16 @@
 <script lang="ts">
-import Highlight from "svelte-highlight";
-import typescript from "highlight.js/lib/languages/typescript";
+import hljs from "highlight.js";
+import "highlight.js/styles/github.css";
 
 export let code: string;
-const language = { name: "typescript", register: typescript };
+
+const html = hljs.highlight(code, { language: "typescript" }).value;
 </script>
 
-<div>
-  <Highlight class="selection:bg-yellow-200" {language} {code} />
-</div>
+<pre><code>{@html html}</code></pre>
 
 <style lang="scss">
-@import "svelte-highlight/src/styles/github.css";
-
-div {
+code {
   @apply text-sm;
 }
 </style>
