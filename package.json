@@ -2,7 +2,7 @@
   "scripts": {
     "start": "run-p routing dev",
     "dev": "snowpack dev",
-    "build": "run-s reset route snowpack-build cache-buster",
+    "build": "run-s reset route snowpack-build",
     "lint": "prettier --write . && eslint --fix --ext .js,.ts . && eslint --fix --ext .svelte .",
     "snowpack-build": "snowpack build",
     "reset": "rm -fr build",
